@@ -1,0 +1,91 @@
+/* -------------------------------------------------------------------------------*/
+.wordsearch-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+    
+  }
+  
+  /* Estilos para la cuadrícula */
+  .wordsearch-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); 
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .wordsearch-cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px; 
+    color:#ff073a;
+  }
+  
+  .highlight {
+    background-color: lightgreen; 
+  }
+  
+  .temp-highlight {
+    background-color: yellow; 
+  }
+  
+  .wordsearch-wordlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .wordsearch-word {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .wordsearch-word.found {
+    text-decoration: line-through;
+    color: green;
+  }
+  
+  /* Estilos para el popup */
+  .wordsearch-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wordsearch-popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .popup-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  

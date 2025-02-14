@@ -1,0 +1,63 @@
+/* home.css - Estilos específicos para la página de inicio */
+
+/* Contenedor de la información (contador + carta) */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    border-radius: 24px;
+  }
+  /* Contenedores individuales */
+  .counter-container,
+  .letter-container {
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    font-size: 1.5rem; 
+    line-height: 1.8; 
+    text-align: center; 
+    padding: 1rem; 
+  }
+  /* Títulos de las secciones */
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ff073a;
+    margin-bottom: 1rem;
+  }
+  /* Título */
+  .time-title {
+    color: #ff073a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  /* Grid de tiempo */
+  .time-grid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  /* Cajas de tiempo */
+  .time-box {
+    background: #fcd5df;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  /* Valor numérico */
+  .time-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff073a;
+  }
+  /* Etiqueta (Días, Horas, etc.) */
+  .time-label {
+    display: block;
+    font-size: 1rem;
+    color: #ff073a;
+  }
+  
+    

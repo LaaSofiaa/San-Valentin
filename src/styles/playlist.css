@@ -1,0 +1,75 @@
+/* Estilos para la lista de canciones */
+.playlist-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  max-width: 600px;
+  margin: auto;
+}
+
+.playlist-card {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 24px;
+  gap: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between; 
+  min-height: 90px; /* Ajuste de altura */
+  margin-bottom: 1rem;
+  width: 100%;
+  min-height: 120px;
+  position: relative; 
+  
+}
+/* Hover en la tarjeta */
+.playlist-card:hover {
+  background-color: #e600323d
+}
+/* Información de la canción */
+.playlist-info {
+  flex-grow: 1;
+  min-width: 0;
+  text-align: left;
+}
+/* Título y artista */
+.playlist-song-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e60033;
+}
+
+.playlist-artist {
+  color: black;
+  font-size: 1rem;
+}
+/* Ajusta la imagen dentro de la tarjeta */
+.playlist-card img {
+  width: 200px; 
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+/* Botón de reproducción */
+.playlist-button {
+  background-color: #ff073a;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 40px;
+  bottom: 90px;
+}
+/* Efecto cuando se presiona */
+.playlist-button:active {
+  transform: scale(0.9);
+}
+.playlist-button:hover {
+  background-color: #e60033;
+}
